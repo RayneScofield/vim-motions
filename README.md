@@ -11,7 +11,17 @@ Frequently used vim motions
 |:bdelete n|delete one buffer|
 |:bf|switch to first buff|
 |:bl|switch to last buff|
-|:set hidden|switch to other buffers without save|  
+|:set hidden|switch to other buffers without save|    
+  
+Buffer status flags:    
+% = current file  
+a = active  
+h = hidden    
+\+ = modified buffer    
+\= = readonly buffer  
+\# = alternative buffer, which can switch to it use Ctrl-^  
+'n Ctrl-^' = switch to buffer n
+
 ## Windows
 Window is a view port of buffer
 |commands|descriptions|
@@ -20,13 +30,20 @@ Window is a view port of buffer
 |:vs|split buffer vertically|
 |Ctrl-w c|close a window|
 |Ctrl-w o|maximize a window|  
+|Ctrl-w n|new buffer window|
+|Ctrl-w v| vertical split|
+|Ctrl-w hjkl|navigate to windows|
+|n Ctrl-w w| navigate to window number n|
+|Ctrl-w =|equal size windows|
+
 ## Tabs
 Tabs are collections of windows layout.
 | commands | descriptions |
 | ----------- | ----------- |
 | :tabnew file | open a file in a tab |
-| :tabclose | close a tab |
-| :tabnext | next tab |
+| :tabc | close a tab |
+| :tabn | next tab |
+| :tabp | previous tab|
 | 3gt | the third tab |  
 ## Basic vim motions
 | commands | descriptions |
